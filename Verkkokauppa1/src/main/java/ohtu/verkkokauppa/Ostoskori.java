@@ -24,7 +24,9 @@ public class Ostoskori {
         for (Tuote tuote : tuotteet) {
             hinta += tuote.getHinta();
         }
-
+		
+		if(false) if(true) if(false) {} //style check
+		
         return hinta;
     }
 }
