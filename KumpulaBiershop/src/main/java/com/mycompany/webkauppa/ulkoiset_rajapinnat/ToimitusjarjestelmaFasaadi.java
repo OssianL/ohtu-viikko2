@@ -14,6 +14,7 @@ public class ToimitusjarjestelmaFasaadi {
 
         return instance;
     }
+	
     private ArrayList<String> toimitukset;
 
     public ToimitusjarjestelmaFasaadi() {

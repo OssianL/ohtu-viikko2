@@ -13,10 +13,10 @@ public class OstoksenSuoritus implements Komento{
     private Ostoskori ostoskori;
     private Varasto varasto;
 
-    protected OstoksenSuoritus(String nimi, String osoite, String luottokorttinumero, Ostoskori kori) {
-        this.varasto = Varasto.getInstance();
-        this.pankki = PankkiFasaadi.getInstance();
-        this.toimitusjarjestelma = ToimitusjarjestelmaFasaadi.getInstance();
+    protected OstoksenSuoritus(String nimi, String osoite, String luottokorttinumero, Ostoskori kori, Varasto varasto, PankkiFasaadi pankki, ToimitusjarjestelmaFasaadi toimitusjarjestelma) {
+        this.varasto = varasto;
+        this.pankki = pankki;
+        this.toimitusjarjestelma = toimitusjarjestelma;
         this.asiakkaanNimi = nimi;
         this.postitusosoite = osoite;
         this.luottokortti = luottokorttinumero;

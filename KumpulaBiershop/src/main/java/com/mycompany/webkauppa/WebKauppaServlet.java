@@ -16,8 +16,8 @@ public abstract class WebKauppaServlet extends HttpServlet {
     protected HttpSession sessio;
     protected Varasto varasto;
 
-    public WebKauppaServlet() {
-        varasto = Varasto.getInstance();
+    public WebKauppaServlet(Varasto varasto) {
+        this.varasto = varasto;
     }        
     
     public void naytaSivu(String url, HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

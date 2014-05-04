@@ -9,6 +9,7 @@ public abstract class TuoteDAO {
 //        return TuoteDAOHibernate.getInstance();
 //    }
     
+	
     public static TuoteDAO inMemory(){
         return TuoteDAOInMemory.getInMemoryDAO();
     }
